@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #6 Web Design - B</title>
+</head>
+<body>
+    <section>
+        <form action="index.html" method="POST">
+            <p>Formulir Calon Pegawai</p>
+            <label for="nama">Nama :
+            </label>
+            <input type="text" id="nama" name="nama" pattern="[a-zA-Z]" required>
+            <br>
+            <br>
+            <label for="alamat">Alamat :
+            </label>
+            <input type="text" id="alamat" name="alamat" required>
+            <br>
+            <br>
+            <label for="password">Password :
+            </label>
+            <input type="password" id="password" name="password" pattern="[0-9]{8,12}" required>
+            <br>
+            <br>
+            <span>Jenis Kelamin :</span>
+            <input type="radio" id="laki-laki" name="gender" value="laki-laki">
+            <label for="laki-laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" name="gender" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+            <br>
+            <br>
+            <span>Bahasa pemograman yang dikuasai :</span>
+            <input type="checkbox" name="skill" id="web" value="web">
+            <label for="web">Web</label>
+            <input type="checkbox" name="skill" id="mobile" value="mobile">
+            <label for="mobile">MOBILE</label>
+            <input type="checkbox" name="skill" id="desktop" value="desktop">
+            <label for="desktop">DESKTOP</label>
+            <br>
+            <br>
+            <span>Kota asal :</span>
+            <select name="asal" id="asal">
+                <option value="semarang">Semarang</option>
+                <option value="manado">Manado</option>
+                <option value="makasar">Makasar</option>
+                <option value="bandung">Bandung</option>
+                <option value="tomohon">Tomohon</option>
+                <option value="lainnya">Lainnya</option>
+            </select>
+            <br>
+            <br>
+            <label for="komentar">Apa yang Membuat Kami harus memilih Anda? :</label>
+            <br>
+            <textarea name="komentar" id="komentar" cols="50" rows="10" required>Tulis jawaban Anda di sini</textarea>
+            <br>
+            <input type="submit" value="Proses">
+        </form>
+    </section>
+
+</body>
+</html>
